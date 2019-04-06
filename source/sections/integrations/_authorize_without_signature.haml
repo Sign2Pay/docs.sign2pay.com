@@ -115,6 +115,11 @@
       %td.required.no no
       %td.format String
       %td.description User's International Bank Account Number (IBAN)
+    %tr
+      %td.param message
+      %td.required.no no
+      %td.format String
+      %td.description This is an unique message to add to the transaction. When not provided, the parameter ref_id is used.
 
 <strong>* E-mail, Mobile Phone number or National Registry Number can be used as an identifier</strong>.
 
@@ -212,6 +217,10 @@
                   .form-group
                     %label.control-label{for: 'user_params_last_name'} Last name
                     %input.form-control.input-md{id: 'user_params_last_name', name: 'user_params[last_name]', placeholder: '', required: '', type: 'text'}/
+                  /Message
+                  .form-group
+                    %label.control-label{for: 'user_params_message'} Message
+                    %input.form-control.input-md{id: 'user_params_message', name: 'user_params[message]', placeholder: '', required: '', type: 'text'}/
 
                   / Control Buttons
                   .form-group
