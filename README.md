@@ -47,7 +47,7 @@ and reenable after:
 git config --global commit.gpgsign true
 ```
 
-###Note:
+### Note:
 
 Using this workflow, you will work only in the source branch and *not touch* the gh-pages branch. Life is good.
 
